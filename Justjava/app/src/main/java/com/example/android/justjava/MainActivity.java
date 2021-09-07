@@ -9,6 +9,8 @@ import java.text.NumberFormat;
 public class MainActivity extends AppCompatActivity {
 
     int quantity = 2;
+    String price = "Total: $" + quantity*5 + "\nThank You!";
+    String priceMessage = "Thank you!";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +22,8 @@ public class MainActivity extends AppCompatActivity {
     public void submitOrder(View view) {
 
         display(quantity);
-        displayPrice(quantity * 5);
+        displayMessage(price);
+//        displayPrice(quantity*5);
     }
 
     public void increment(View view) {
@@ -31,6 +34,13 @@ public class MainActivity extends AppCompatActivity {
     public void decrement(View view) {
         quantity = quantity - 1;
         display(quantity);
+    }
+    /**
+     * This method displays the given text on the screen.
+     */
+    private void displayMessage(String message) {
+        TextView priceTextView = (TextView) findViewById(R.id.price_text_view);
+        priceTextView.setText(message);
     }
 
     /* This method displays the given quantity value on the screen.*/
