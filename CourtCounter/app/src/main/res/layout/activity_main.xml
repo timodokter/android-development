@@ -1,18 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="horizontal"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_weight=".50"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="8dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="8dp"
+            android:text="Team A"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/team_a_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="8dp"
+            android:text="3"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:onClick="add3PointsteamA"
+            android:text="+3 POINTS" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:onClick="add2PointsTeamA"
+            android:text="+2 POINTS" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:onClick="add1PointsTeamA"
+            android:text="FREE THROW"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".50"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="8dp"
+            android:text="Team B"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/team_b_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="8dp"
+            android:text="3"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:onClick="add3PointsteamB"
+            android:text="+3 POINTS"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:onClick="add2PointsTeamB"
+            android:text="+2 POINTS"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:onClick="add1PointsTeamB"
+            android:text="FREE THROW"/>
+    </LinearLayout>
+
+</LinearLayout>
