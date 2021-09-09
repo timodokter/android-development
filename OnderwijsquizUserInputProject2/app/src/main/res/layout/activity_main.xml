@@ -8,12 +8,124 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
 
+
+        <!--        vraag 1-->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Vraag 1: " />
+            android:text="Vraag 1: In welk jaar eindigde de tweede wereld oorlog in Nederland?"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
 
+        <EditText
+            android:id="@+id/vraag1_antwoord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!--        vraag 2-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vraag 2: Hoe word het vliegtug genoemd waar de amerikaanse president in zit?"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/vraag2_antwoord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!--        vraag 3-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vraag 3: Welke amerikaanse president werd er op 22 November 1963 neergeschoten?"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/vraag3_antwoord1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:text="Abraham Lincoln"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/vraag3_antwoord2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:text="George Washington"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/vraag3_antwoord3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:text="John F. Kennedy"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/vraag3_antwoord4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:text="Ronald Reagen"
+            android:textSize="16sp" />
+
+        <!--        vraag 4-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vraag 4: In welk jaar gebeurde de terroristische aanslag op de twin towers ook wel 9/11 genoemd?"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/vraag4_antwoord1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:text="1999"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/vraag4_antwoord2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:text="2000"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/vraag4_antwoord3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:text="2001"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/vraag4_antwoord4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:text="2002"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp"
+            android:text="Submit" />
     </LinearLayout>
+
 </ScrollView>
