@@ -85,7 +85,7 @@
             android:layout_height="wrap_content"
             android:text="Vraag 4: In welk jaar gebeurde de terroristische aanslag op de twin towers ook wel 9/11 genoemd?"
             android:textColor="@android:color/black"
-            android:textSize="16sp" />
+            android:textSize="20sp" />
 
         <CheckBox
             android:id="@+id/vraag4_antwoord1"
