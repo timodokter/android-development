@@ -3,7 +3,11 @@ package com.example.android.onderwijsquiz_userinputproject2;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import java.util.Locale;
@@ -45,5 +49,42 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /*vraag 3*/
+    Boolean isAnswerQ3Correct = false;
+    int goodIdQ3;
+    int givenAnswerQ3;
 
+    public boolean CheckQ3() {
+        RadioGroup vraag3_antwoorden = findViewById(R.id.vraag3_antwoorden);
+        givenAnswerQ3 = vraag3_antwoorden.getCheckedRadioButtonId();
+        RadioButton goodAnswerQ3 = findViewById(R.id.vraag3_antwoord3);
+        goodIdQ3 = goodAnswerQ3.getId();
+
+        isAnswerQ3Correct = givenAnswerQ3 == goodIdQ3;
+        return isAnswerQ3Correct;
+    }
+
+    /*vraag 4*/
+    Boolean isAnswerQ4Correct = false;
+    int goodIdQ4;
+    int givenAnswerQ4;
+
+    public boolean CheckQ4() {
+        RadioGroup vraag4_antwoorden = findViewById(R.id.vraag4_antwoorden);
+        givenAnswerQ4 = vraag4_antwoorden.getCheckedRadioButtonId();
+        RadioButton goodAnswerQ4 = findViewById(R.id.vraag4_antwoord3);
+        goodIdQ4 = goodAnswerQ4.getId();
+
+        isAnswerQ4Correct = givenAnswerQ4 == goodIdQ4;
+        return isAnswerQ4Correct;
+    }
+
+
+
+    public void submitAnswers(View view) {
+        CheckQ1();
+        CheckQ2();
+        CheckQ3();
+        CheckQ4();
+
+    }
 }

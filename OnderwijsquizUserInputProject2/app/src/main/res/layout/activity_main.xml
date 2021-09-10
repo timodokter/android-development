@@ -47,37 +47,43 @@
             android:textColor="@android:color/black"
             android:textSize="20sp" />
 
-        <CheckBox
-            android:id="@+id/vraag3_antwoord1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingStart="16dp"
-            android:text="Abraham Lincoln"
-            android:textSize="16sp" />
+        <RadioGroup
+            android:id="@+id/vraag3_antwoorden"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        <CheckBox
-            android:id="@+id/vraag3_antwoord2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingStart="16dp"
-            android:text="George Washington"
-            android:textSize="16sp" />
+            <RadioButton
+                android:id="@+id/vraag3_antwoord1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:text="Abraham Lincoln"
+                android:textSize="16sp"/>
 
-        <CheckBox
-            android:id="@+id/vraag3_antwoord3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingStart="16dp"
-            android:text="John F. Kennedy"
-            android:textSize="16sp" />
+            <RadioButton
+                android:id="@+id/vraag3_antwoord2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:text="George Washington"
+                android:textSize="16sp"/>
 
-        <CheckBox
-            android:id="@+id/vraag3_antwoord4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingStart="16dp"
-            android:text="Ronald Reagen"
-            android:textSize="16sp" />
+            <RadioButton
+                android:id="@+id/vraag3_antwoord3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:text="John F. Kennedy"
+                android:textSize="16sp"/>
+
+            <RadioButton
+                android:id="@+id/vraag3_antwoord4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:text="Ronald Reagen"
+                android:textSize="16sp"/>
+        </RadioGroup>
 
         <!--        vraag 4-->
         <TextView
@@ -87,37 +93,43 @@
             android:textColor="@android:color/black"
             android:textSize="20sp" />
 
-        <CheckBox
-            android:id="@+id/vraag4_antwoord1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingStart="16dp"
-            android:text="1999"
-            android:textSize="14sp" />
+        <RadioGroup
+            android:id="@+id/vraag4_antwoorden"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        <CheckBox
-            android:id="@+id/vraag4_antwoord2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingStart="16dp"
-            android:text="2000"
-            android:textSize="16sp" />
+            <RadioButton
+                android:id="@+id/vraag4_antwoord1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:text="1999"
+                android:textSize="16sp"/>
 
-        <CheckBox
-            android:id="@+id/vraag4_antwoord3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingStart="16dp"
-            android:text="2001"
-            android:textSize="16sp" />
+            <RadioButton
+                android:id="@+id/vraag4_antwoord2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:text="2000"
+                android:textSize="16sp"/>
 
-        <CheckBox
-            android:id="@+id/vraag4_antwoord4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingStart="16dp"
-            android:text="2002"
-            android:textSize="16sp" />
+            <RadioButton
+                android:id="@+id/vraag4_antwoord3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:text="2001"
+                android:textSize="16sp"/>
+
+            <RadioButton
+                android:id="@+id/vraag4_antwoord4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:text="2002"
+                android:textSize="16sp"/>
+        </RadioGroup>
 
         <Button
             android:id="@+id/submit_button"
@@ -125,7 +137,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="8dp"
-            android:text="Submit" />
+            android:text="Submit"
+            />
     </LinearLayout>
 
 </ScrollView>
