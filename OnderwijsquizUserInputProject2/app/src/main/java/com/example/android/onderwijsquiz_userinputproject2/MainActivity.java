@@ -78,13 +78,72 @@ public class MainActivity extends AppCompatActivity {
         return isAnswerQ4Correct;
     }
 
+    public String setTextQ1() {
+        CheckQ1();
+        String textScoreQ1 = "";
 
+        if (isAnswerQ1Correct) {
+            textScoreQ1 = "Je antwoord op vraag 1 is goed";
+        } else {
+            textScoreQ1 = "Je antwoord op vraag 1 is fout";
+        }
 
-    public void submitAnswers(View view) {
+        return textScoreQ1;
+    }
+
+    public String setTextQ2() {
+        CheckQ2();
+        String textScoreQ2 = "";
+
+        if (isAnswerQ2Correct) {
+            textScoreQ2 = "Je antwoord op vraag 2 is goed";
+        } else {
+            textScoreQ2 = "Je antwoord op vraag 2 is fout";
+        }
+
+        return textScoreQ2;
+    }
+
+    public String setTextQ3() {
+        CheckQ3();
+        String textScoreQ3 = "";
+
+        if (isAnswerQ3Correct) {
+            textScoreQ3 = "Je antwoord op vraag 3 is goed";
+        } else {
+            textScoreQ3 = "Je antwoord op vraag 3 is fout";
+        }
+
+        return textScoreQ3;
+    }
+
+    public String setTextQ4() {
+        CheckQ4();
+        String textScoreQ4 = "";
+
+        if (isAnswerQ4Correct) {
+            textScoreQ4 = "Je antwoord op vraag 4 is goed";
+        } else {
+            textScoreQ4 = "Je antwoord op vraag 4 is fout";
+        }
+
+        return textScoreQ4;
+    }
+
+    public void setScoreText() {
+        TextView scoreText = findViewById(R.id.show_score_text_view);
         CheckQ1();
         CheckQ2();
         CheckQ3();
         CheckQ4();
+        scoreText.setText(setTextQ1() + "\n" + setTextQ2() + "\n" + setTextQ3() + "\n" + setTextQ4());
+    }
 
+    public void submitAnswers(View view) {
+        setScoreText();
+        CheckQ1();
+        CheckQ2();
+        CheckQ3();
+        CheckQ4();
     }
 }

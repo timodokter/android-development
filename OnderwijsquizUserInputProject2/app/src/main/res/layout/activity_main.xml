@@ -1,144 +1,172 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="10dp"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-
-        <!--        vraag 1-->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Vraag 1: In welk jaar eindigde de tweede wereld oorlog in Nederland?"
-            android:textColor="@android:color/black"
-            android:textSize="20sp" />
-
-        <EditText
-            android:id="@+id/vraag1_antwoord"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
 
-        <!--        vraag 2-->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Vraag 2: Hoe word het vliegtug genoemd waar de amerikaanse president in zit?"
-            android:textColor="@android:color/black"
-            android:textSize="20sp" />
 
-        <EditText
-            android:id="@+id/vraag2_antwoord"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <!--        vraag 3-->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Vraag 3: Welke amerikaanse president werd er op 22 November 1963 neergeschoten?"
-            android:textColor="@android:color/black"
-            android:textSize="20sp" />
-
-        <RadioGroup
-            android:id="@+id/vraag3_antwoorden"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <RadioButton
-                android:id="@+id/vraag3_antwoord1"
+            <!--        vraag 1-->
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingStart="16dp"
-                android:text="Abraham Lincoln"
-                android:textSize="16sp"/>
+                android:text="Vraag 1: In welk jaar eindigde de tweede wereld oorlog in Nederland?"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
 
-            <RadioButton
-                android:id="@+id/vraag3_antwoord2"
+            <EditText
+                android:id="@+id/vraag1_antwoord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!--        vraag 2-->
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingStart="16dp"
-                android:text="George Washington"
-                android:textSize="16sp"/>
+                android:text="Vraag 2: Hoe word het vliegtug genoemd waar de amerikaanse president in zit?"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
 
-            <RadioButton
-                android:id="@+id/vraag3_antwoord3"
+            <EditText
+                android:id="@+id/vraag2_antwoord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!--        vraag 3-->
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingStart="16dp"
-                android:text="John F. Kennedy"
-                android:textSize="16sp"/>
+                android:text="Vraag 3: Welke amerikaanse president werd er op 22 November 1963 neergeschoten?"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
 
-            <RadioButton
-                android:id="@+id/vraag3_antwoord4"
+            <RadioGroup
+                android:id="@+id/vraag3_antwoorden"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/vraag3_antwoord1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="16dp"
+                    android:text="Abraham Lincoln"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/vraag3_antwoord2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="16dp"
+                    android:text="George Washington"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/vraag3_antwoord3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="16dp"
+                    android:text="John F. Kennedy"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/vraag3_antwoord4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="16dp"
+                    android:text="Ronald Reagen"
+                    android:textSize="16sp" />
+            </RadioGroup>
+
+            <!--        vraag 4-->
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingStart="16dp"
-                android:text="Ronald Reagen"
-                android:textSize="16sp"/>
-        </RadioGroup>
+                android:text="Vraag 4: In welk jaar gebeurde de terroristische aanslag op de twin towers ook wel 9/11 genoemd?"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
 
-        <!--        vraag 4-->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Vraag 4: In welk jaar gebeurde de terroristische aanslag op de twin towers ook wel 9/11 genoemd?"
-            android:textColor="@android:color/black"
-            android:textSize="20sp" />
+            <RadioGroup
+                android:id="@+id/vraag4_antwoorden"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-        <RadioGroup
-            android:id="@+id/vraag4_antwoorden"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/vraag4_antwoord1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="16dp"
+                    android:text="1999"
+                    android:textSize="16sp" />
 
-            <RadioButton
-                android:id="@+id/vraag4_antwoord1"
+                <RadioButton
+                    android:id="@+id/vraag4_antwoord2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="16dp"
+                    android:text="2000"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/vraag4_antwoord3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="16dp"
+                    android:text="2001"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/vraag4_antwoord4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="16dp"
+                    android:text="2002"
+                    android:textSize="16sp" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/submit_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingStart="16dp"
-                android:text="1999"
-                android:textSize="16sp"/>
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8dp"
+                android:onClick="submitAnswers"
+                android:text="Submit" />
 
-            <RadioButton
-                android:id="@+id/vraag4_antwoord2"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:id="@+id/score_layout"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingStart="16dp"
-                android:text="2000"
-                android:textSize="16sp"/>
+                android:orientation="vertical">
 
-            <RadioButton
-                android:id="@+id/vraag4_antwoord3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingStart="16dp"
-                android:text="2001"
-                android:textSize="16sp"/>
+                <TextView
+                    android:id="@+id/score_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Score: "
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
 
-            <RadioButton
-                android:id="@+id/vraag4_antwoord4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingStart="16dp"
-                android:text="2002"
-                android:textSize="16sp"/>
-        </RadioGroup>
-
-        <Button
-            android:id="@+id/submit_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="8dp"
-            android:text="Submit"
-            android:onClick="submitAnswers"/>
-    </LinearLayout>
-
-</ScrollView>
+                <TextView
+                    android:id="@+id/show_score_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Submit your answers to show your score."
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
