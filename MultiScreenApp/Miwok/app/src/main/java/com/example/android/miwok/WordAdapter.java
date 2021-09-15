@@ -6,13 +6,20 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import androidx.core.content.ContextCompat;
+
 import java.util.ArrayList;
 
 public class WordAdapter extends ArrayAdapter<Word> {
 
-    public WordAdapter(Activity context, ArrayList<Word> words) {
+    private int mcolor_category_id;
+
+    public WordAdapter(Activity context, ArrayList<Word> words, int color_category) {
         super(context, 0, words);
+        mcolor_category_id = color_category;
     }
 
     @Override
@@ -24,7 +31,6 @@ public class WordAdapter extends ArrayAdapter<Word> {
         }
 
         Word currentWord = getItem(position);
-
 
         ImageView imageView = (ImageView) listItemView.findViewById(R.id.image_view);
 
@@ -41,6 +47,10 @@ public class WordAdapter extends ArrayAdapter<Word> {
 
         TextView numberTextView = (TextView) listItemView.findViewById(R.id.default_text_view);
         numberTextView.setText(currentWord.getDefaultTranslation());
+
+        LinearLayout listLinearLayout = (LinearLayout) listItemView.findViewById(R.id.text_container);
+        int color = ContextCompat.getColor(getContext(), mcolor_category_id);
+        listLinearLayout.setBackgroundColor(color);
 
         return listItemView;
     }
