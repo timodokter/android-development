@@ -13,9 +13,9 @@
         android:background="@color/category_rijksmuseum">
 
         <TextView
+            android:id="@+id/rijksmuseum_home_text"
             style="@style/CategoryStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
             android:text="@string/home_rijksmuseum" />
     </FrameLayout>
 
@@ -26,9 +26,9 @@
         android:background="@color/category_vondelpark">
 
         <TextView
+            android:id="@+id/vondelpark_home_text"
             style="@style/CategoryStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
             android:text="@string/home_vondelpark" />
     </FrameLayout>
 
@@ -39,9 +39,9 @@
         android:background="@color/category_nemo">
 
         <TextView
+            android:id="@+id/nemo_home_text"
             style="@style/CategoryStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
             android:text="@string/home_nemo" />
     </FrameLayout>
 
@@ -52,9 +52,9 @@
         android:background="@color/category_annefrankhuis">
 
         <TextView
+            android:id="@+id/anne_frank_huis_home_text"
             style="@style/CategoryStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
             android:text="@string/home_annefrankhuis" />
     </FrameLayout>
 </LinearLayout>

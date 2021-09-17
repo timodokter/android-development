@@ -9,6 +9,6 @@ public class NemoActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_nemo);
+        setContentView(R.layout.atractions_list);
     }
 }
