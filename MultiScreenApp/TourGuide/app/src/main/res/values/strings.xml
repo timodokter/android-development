@@ -6,4 +6,8 @@
     <string name="home_annefrankhuis">Anne Frank Huis</string>
     <string name="title_placeholder">PLACEHOLDER</string>
     <string name="info_placeholder">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
+
+<!--    strings for the rijksmuseum-->
+    <string name="info_rijksmuseum">info rijksmuseum</string>
+    <string name="title_rijksmuseum">title rijksmuseum</string>
 </resources>

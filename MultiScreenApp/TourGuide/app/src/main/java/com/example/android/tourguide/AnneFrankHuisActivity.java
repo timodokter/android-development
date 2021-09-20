@@ -9,6 +9,6 @@ public class AnneFrankHuisActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.atractions_list);
+        setContentView(R.layout.list_item);
     }
 }
