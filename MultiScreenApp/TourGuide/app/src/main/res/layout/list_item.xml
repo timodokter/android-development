@@ -12,11 +12,15 @@
         android:src="@drawable/vondelpark" />
 
     <LinearLayout
+        android:id="@+id/text_sub_page"
         style="@style/TextSubPage">
 
-    <TextView style="@style/TitleSubPage" />
+    <TextView
+        android:id="@+id/title_sub_page"
+        style="@style/TitleSubPage" />
     
     <TextView
+        android:id="@+id/info_sub_page"
         style="@style/InfoSubPage"/>
     </LinearLayout>
 
