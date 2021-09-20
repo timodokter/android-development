@@ -2,10 +2,22 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
     android:background="@color/tan_background"
-    android:minHeight="@dimen/list_item_height">
+    android:minHeight="@dimen/list_item_height"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/image_view"
+        style="@style/ImageSubPage"
+        android:src="@drawable/vondelpark" />
+
+    <LinearLayout
+        style="@style/TextSubPage">
 
     <TextView style="@style/TitleSubPage" />
+    
+    <TextView
+        style="@style/InfoSubPage"/>
+    </LinearLayout>
 
 </LinearLayout>
