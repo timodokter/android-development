@@ -7,15 +7,18 @@ import android.os.Bundle;
 
 public class RijksmuseumActivity extends AppCompatActivity {
 
-    String textInfoRijksmuseum = getString(R.string.info_rijksmuseum);
-    String textTitleRijksmuseum = getString(R.string.title_rijksmuseum);
+    String textInfoRijksmuseum;
+    String textTitleRijksmuseum;
     int idImageRijksmuseum = R.drawable.rijksmuseum;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list_item);
-    }
 
-    public Attractions currentCategory = new Attractions(textInfoRijksmuseum, textTitleRijksmuseum, idImageRijksmuseum);
+        textInfoRijksmuseum = getString(R.string.info_rijksmuseum);
+        textTitleRijksmuseum = getString(R.string.title_rijksmuseum);
+
+        Attractions currentCategory = new Attractions(textInfoRijksmuseum, textTitleRijksmuseum, idImageRijksmuseum);
+    }
 }

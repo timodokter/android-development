@@ -7,7 +7,19 @@
     <string name="title_placeholder">PLACEHOLDER</string>
     <string name="info_placeholder">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
 
-<!--    strings for the rijksmuseum-->
+    <!--    strings for the rijksmuseum-->
     <string name="info_rijksmuseum">info rijksmuseum</string>
     <string name="title_rijksmuseum">title rijksmuseum</string>
+
+    <!--    strings for the rijksmuseum-->
+    <string name="info_vondelpark">info vondelpark</string>
+    <string name="title_vondelpark">title vondelpark</string>
+
+    <!--    strings for the rijksmuseum-->
+    <string name="info_nemo">info nemo</string>
+    <string name="title_nemo">title nemo</string>
+
+    <!--    strings for the rijksmuseum-->
+    <string name="info_anne_frank_huis">info anne frank huis</string>
+    <string name="title_anne_frank_huis">title anne frank huis</string>
 </resources>
